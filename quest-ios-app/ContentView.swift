@@ -12,7 +12,7 @@ struct ContentView: View {
         VStack {
             Header()
             Spacer(minLength: 15).fixedSize()
-            QuestCard()
+            QuestCardList()
             Spacer(minLength: 10)
         }
     }
