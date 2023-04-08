@@ -104,12 +104,12 @@
 			children = (
 				2C61FA2D29E07040004797AD /* quest_ios_appApp.swift */,
 				2C61FA2F29E07040004797AD /* ContentView.swift */,
-				2C06EDED29E0833800982E70 /* QuestCard.swift */,
-				2C06EDEF29E1386F00982E70 /* QuestDetail.swift */,
 				2C06EDEB29E07E3A00982E70 /* Header.swift */,
+				2C06EDED29E0833800982E70 /* QuestCard.swift */,
+				2C06EDF129E1C4A800982E70 /* QuestCardList.swift */,
+				2C06EDEF29E1386F00982E70 /* QuestDetail.swift */,
 				2C61FA3129E07041004797AD /* Assets.xcassets */,
 				2C61FA3329E07041004797AD /* Preview Content */,
-				2C06EDF129E1C4A800982E70 /* QuestCardList.swift */,
 			);
 			path = "quest-ios-app";
 			sourceTree = "<group>";
