@@ -29,30 +29,40 @@ struct QuestCard: View {
     )
     
     var body: some View {
-        VStack(alignment: .leading){
-            Text(quest.title)
-                .font(.title3)
-                .fontWeight(.bold)
-                .padding(.bottom, 1.0)
+        NavigationView{
+            NavigationLink(destination:QuestDetail(quest: quest)){
+                VStack {
+                    VStack(alignment: .leading){
+                        Text(quest.title)
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .foregroundColor(Color.black)
+                            .padding(.bottom, 1.0)
+                        
+                        Text(quest.description)
+                            .foregroundColor(Color.gray)
+                            .padding(.bottom, 1.0)
+                        
+                        Text(quest.difficulty)
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .foregroundColor(Color.black)
+                            .padding(.bottom, 1.0)
+                        
+                        HStack {
+                            Text("参加人数：\(quest.num_participate)人")
+                                .foregroundColor(Color.black)
+                            Text("クリア人数：\(quest.num_clear)人")
+                                .foregroundColor(Color.black)
+                        }
+                    }
+                    .padding(.all, 16.0)
+                    .border(/*@START_MENU_TOKEN@*/Color(red: 0.8980392156862745, green: 0.9058823529411765, blue: 0.9215686274509803)/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                    Spacer(minLength: 10)
+                }
                 
-            Text(quest.description)
-                .foregroundColor(Color.gray)
-                .padding(.bottom, 1.0)
-                
-            Text(quest.difficulty)
-                .font(.title3)
-                .fontWeight(.bold)
-                .padding(.bottom, 1.0)
-
-            HStack {
-                Text("参加人数：\(quest.num_participate)人")
-                Text("クリア人数：\(quest.num_clear)人")
             }
         }
-        .padding(.all, 16.0)
-        .border(/*@START_MENU_TOKEN@*/Color(red: 0.8980392156862745, green: 0.9058823529411765, blue: 0.9215686274509803)/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-        
-        
     }
 }
 
