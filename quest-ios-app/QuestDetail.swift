@@ -34,12 +34,13 @@ struct QuestDetail: View {
 struct QuestDetail_Preview: PreviewProvider {
     static var previews: some View {
         let quest = Quest(
-                id: 1,
+                id: "1",
                 title: "This is a test",
                 description: "This is a test",
                 difficulty: "Normal",
                 num_participate: 12345,
-                num_clear: 678
+                num_clear: 678,
+                challenges: []
             )
         VStack {
             QuestDetail(quest: quest)

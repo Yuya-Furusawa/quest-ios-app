@@ -9,13 +9,21 @@ import Foundation
 import SwiftUI
 
 struct Quest: Codable, Identifiable {
-    var id:Int
+    let id:String
     
     let title:String
     let description:String
     let difficulty:String
     let num_participate:Int
     let num_clear:Int
+    let challenges: [Challenge]
+}
+
+struct Challenge: Codable, Identifiable {
+    let id:String
+    let name:String
+    let description:String
+    let quest_id:String
 }
 
 struct QuestCard: View {
@@ -26,12 +34,17 @@ struct QuestCard: View {
             VStack(alignment: .leading){
                 Text(quest.title)
                     .font(.title3)
-                    .fontWeight(.bold)
+                    .fontWeight(.heavy)
                     .foregroundColor(Color.black)
+                    .multilineTextAlignment(.leading)
                     .padding(.bottom, 1.0)
                 
                 Text(quest.description)
+                    .font(.callout)
                     .foregroundColor(Color.gray)
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(2)
+                    .truncationMode(.tail)
                     .padding(.bottom, 1.0)
                 
                 Text(quest.difficulty)
@@ -58,12 +71,13 @@ struct QuestCard: View {
 struct QuestCard_Preview: PreviewProvider {
     static var previews: some View {
         let quest = Quest(
-            id: 1,
+            id: "1",
             title: "This is a test",
             description: "This is a test",
             difficulty: "Normal",
             num_participate: 12345,
-            num_clear: 678
+            num_clear: 678,
+            challenges: []
         )
         QuestCard(quest: quest)
     }
