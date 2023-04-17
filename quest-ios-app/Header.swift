@@ -8,22 +8,39 @@
 import SwiftUI
 
 struct Header: View {
+    @State private var isActive = false
+    
     var body: some View {
-        VStack{
-            Text("Quest App")
-                .font(.title2)
-                        .bold()
-                        .foregroundColor(Color(red: 0.125, green: 0.517, blue: 0.78))
-                        
-            Divider()
+        ZStack{
+            HStack(alignment: .center){
+                Spacer()
+                
+                Text("Quest App")
+                    .font(.title2)
+                    .bold()
+                    .foregroundColor(Color(red: 0.125, green: 0.517, blue: 0.78))
+                
+                Spacer()
+            }
+            
+            HStack(alignment: .center){
+                Spacer()
+                
+                LoginButton()
+                
+            }
+            .padding(.trailing)
         }
+        Divider()
     }
 }
 
 struct Header_Preview: PreviewProvider {
     static var previews: some View {
         VStack {
-            Header()
+            NavigationView{
+                Header()
+            }
             Spacer(minLength: 10)
         }
     }
