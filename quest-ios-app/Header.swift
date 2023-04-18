@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Header: View {
+    @EnvironmentObject var appState: AppState
     @State private var isActive = false
     
     var body: some View {
@@ -26,7 +27,11 @@ struct Header: View {
             HStack(alignment: .center){
                 Spacer()
                 
-                LoginButton()
+                if appState.isLoggedIn {
+                    Spacer()
+                } else {
+                    LoginButton()
+                }
                 
             }
             .padding(.trailing)

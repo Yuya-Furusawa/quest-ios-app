@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct LoginPage: View {
+    @EnvironmentObject var appState: AppState
+    @Environment(\.presentationMode) var presentationMode
+    
     @State private var email: String = ""
     @State private var password: String = ""
     @State private var showAlert = false
@@ -29,7 +32,7 @@ struct LoginPage: View {
             Button(action: {
                 if validate(email: email, password: password) {
                     // ログイン成功
-                    print("ログイン成功")
+                    loginUser()
                 } else {
                     // ログイン失敗
                     alertTitle = "ログイン失敗"
@@ -55,11 +58,16 @@ struct LoginPage: View {
         // この例では、ダミーの認証処理を行っています。
         return email == "user@example.com" && password == "password"
     }
+    
+    func loginUser() {
+        appState.isLoggedIn = true
+        presentationMode.wrappedValue.dismiss()
+    }
 }
 
 struct LoginPage_Previews: PreviewProvider {
     static var previews: some View {
-        LoginPage()
+        LoginPage().environmentObject(AppState())
     }
 }
 

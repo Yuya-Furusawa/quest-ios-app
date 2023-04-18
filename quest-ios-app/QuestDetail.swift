@@ -28,6 +28,7 @@ struct QuestDetail: View {
             }
             Spacer(minLength: 10)
         }
+        .padding()
     }
 }
 

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var appState = AppState()
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -17,6 +19,7 @@ struct ContentView: View {
                 Spacer(minLength: 10)
             }
         }
+        .environmentObject(appState)
     }
 }
 

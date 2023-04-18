@@ -11,6 +11,7 @@
 		2C06EDEE29E0833800982E70 /* QuestCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06EDED29E0833800982E70 /* QuestCard.swift */; };
 		2C06EDF029E1386F00982E70 /* QuestDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06EDEF29E1386F00982E70 /* QuestDetail.swift */; };
 		2C06EDF229E1C4A800982E70 /* QuestCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06EDF129E1C4A800982E70 /* QuestCardList.swift */; };
+		2C3A387C29EECDC900434E96 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A387B29EECDC900434E96 /* AppState.swift */; };
 		2C61FA2E29E07040004797AD /* quest_ios_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61FA2D29E07040004797AD /* quest_ios_appApp.swift */; };
 		2C61FA3029E07040004797AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61FA2F29E07040004797AD /* ContentView.swift */; };
 		2C61FA3229E07041004797AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C61FA3129E07041004797AD /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		2C06EDED29E0833800982E70 /* QuestCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestCard.swift; sourceTree = "<group>"; };
 		2C06EDEF29E1386F00982E70 /* QuestDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestDetail.swift; sourceTree = "<group>"; };
 		2C06EDF129E1C4A800982E70 /* QuestCardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestCardList.swift; sourceTree = "<group>"; };
+		2C3A387B29EECDC900434E96 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		2C61FA2A29E07040004797AD /* quest-ios-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "quest-ios-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C61FA2D29E07040004797AD /* quest_ios_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quest_ios_appApp.swift; sourceTree = "<group>"; };
 		2C61FA2F29E07040004797AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				2C61FA2D29E07040004797AD /* quest_ios_appApp.swift */,
 				2C61FA2F29E07040004797AD /* ContentView.swift */,
 				2C06EDEB29E07E3A00982E70 /* Header.swift */,
+				2C3A387B29EECDC900434E96 /* AppState.swift */,
 				2C06EDED29E0833800982E70 /* QuestCard.swift */,
 				2C06EDF129E1C4A800982E70 /* QuestCardList.swift */,
 				2C06EDEF29E1386F00982E70 /* QuestDetail.swift */,
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C06EDF029E1386F00982E70 /* QuestDetail.swift in Sources */,
+				2C3A387C29EECDC900434E96 /* AppState.swift in Sources */,
 				2CCBD0BA29ED5F8A005B2412 /* LoginButton.swift in Sources */,
 				2CCBD0B829ED5CC3005B2412 /* LoginPage.swift in Sources */,
 				2C61FA3029E07040004797AD /* ContentView.swift in Sources */,
