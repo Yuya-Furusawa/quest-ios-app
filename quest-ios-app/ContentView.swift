@@ -9,10 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 Header()
-                Spacer(minLength: 15).fixedSize()
+                Spacer(minLength: 0).fixedSize()
                 QuestCardList()
                 Spacer(minLength: 10)
             }

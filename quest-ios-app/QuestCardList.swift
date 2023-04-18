@@ -11,17 +11,18 @@ struct QuestCardList: View {
     @StateObject var viewModel = QuestViewModel()
     
     var body: some View {
-        NavigationView{
-            VStack{
-                ScrollView {
-                    ForEach(viewModel.quests) { quest in
-                        NavigationLink(destination: QuestDetail(quest: quest)){
-                            QuestCard(quest: quest)
-                        }
+        VStack{
+            ScrollView {
+                ForEach(viewModel.quests) { quest in
+                    NavigationLink{
+                        QuestDetail(quest: quest)
+                    } label: {
+                        QuestCard(quest: quest)
                     }
                 }
             }
         }
+        .padding()
         .onAppear {
             viewModel.fetchQuests()
         }
@@ -30,6 +31,8 @@ struct QuestCardList: View {
 
 struct QuestCardList_Preview: PreviewProvider {
     static var previews: some View {
-        QuestCardList()
+        NavigationStack{
+            QuestCardList()
+        }
     }
 }

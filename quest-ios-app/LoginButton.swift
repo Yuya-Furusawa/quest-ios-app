@@ -11,7 +11,9 @@ struct LoginButton: View {
     @State private var isActive = false
     
     var body: some View {
-        NavigationLink(destination: LoginPage()){
+        NavigationLink{
+            LoginPage()
+        } label: {
             Text("LogIn")
                 .fontWeight(.bold)
                 .foregroundColor(Color.white)
@@ -24,7 +26,7 @@ struct LoginButton: View {
 
 struct LoginButton_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView{
+        NavigationStack{
             LoginButton()
         }
     }
