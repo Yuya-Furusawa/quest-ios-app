@@ -10,29 +10,28 @@ import SwiftUI
 struct Header: View {
     @EnvironmentObject var appState: AppState
     @State private var isActive = false
-    
+
     var body: some View {
         ZStack{
             HStack(alignment: .center){
                 Spacer()
-                
+
                 Text("Quest App")
                     .font(.title2)
                     .bold()
                     .foregroundColor(Color(red: 0.125, green: 0.517, blue: 0.78))
-                
+
                 Spacer()
             }
-            
+
             HStack(alignment: .center){
                 Spacer()
-                
+
                 if appState.isLoggedIn {
                     Spacer()
                 } else {
                     LoginButton()
                 }
-                
             }
             .padding(.trailing)
         }

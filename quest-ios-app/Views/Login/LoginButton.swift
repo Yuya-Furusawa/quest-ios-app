@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LoginButton: View {
     @State private var isActive = false
-    
+
     var body: some View {
         NavigationLink{
             LoginPage()

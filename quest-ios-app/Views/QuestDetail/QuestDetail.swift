@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QuestDetail: View {
     let quest:Quest
-    
+
     var body: some View {
         VStack(alignment: .leading){
             Text(quest.title)
@@ -47,6 +47,5 @@ struct QuestDetail_Preview: PreviewProvider {
             QuestDetail(quest: quest)
             Spacer(minLength: 10)
         }
-        
     }
 }

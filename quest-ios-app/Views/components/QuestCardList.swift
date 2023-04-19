@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QuestCardList: View {
     @StateObject var viewModel = QuestViewModel()
-    
+
     var body: some View {
         VStack{
             ScrollView {

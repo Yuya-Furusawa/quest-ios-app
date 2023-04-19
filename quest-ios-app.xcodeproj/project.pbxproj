@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C06EDEC29E07E3A00982E70 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06EDEB29E07E3A00982E70 /* Header.swift */; };
-		2C06EDEE29E0833800982E70 /* QuestCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06EDED29E0833800982E70 /* QuestCard.swift */; };
-		2C06EDF029E1386F00982E70 /* QuestDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06EDEF29E1386F00982E70 /* QuestDetail.swift */; };
-		2C06EDF229E1C4A800982E70 /* QuestCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06EDF129E1C4A800982E70 /* QuestCardList.swift */; };
-		2C3A387C29EECDC900434E96 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A387B29EECDC900434E96 /* AppState.swift */; };
 		2C61FA2E29E07040004797AD /* quest_ios_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61FA2D29E07040004797AD /* quest_ios_appApp.swift */; };
-		2C61FA3029E07040004797AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61FA2F29E07040004797AD /* ContentView.swift */; };
 		2C61FA3229E07041004797AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C61FA3129E07041004797AD /* Assets.xcassets */; };
 		2C61FA3529E07041004797AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C61FA3429E07041004797AD /* Preview Assets.xcassets */; };
 		2C61FA3F29E07042004797AD /* quest_ios_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61FA3E29E07042004797AD /* quest_ios_appTests.swift */; };
 		2C61FA4929E07042004797AD /* quest_ios_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61FA4829E07042004797AD /* quest_ios_appUITests.swift */; };
 		2C61FA4B29E07042004797AD /* quest_ios_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61FA4A29E07042004797AD /* quest_ios_appUITestsLaunchTests.swift */; };
-		2CCBD0B829ED5CC3005B2412 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBD0B729ED5CC3005B2412 /* LoginPage.swift */; };
-		2CCBD0BA29ED5F8A005B2412 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCBD0B929ED5F8A005B2412 /* LoginButton.swift */; };
-		2CFA04FC29E7E5FD00BEBB4B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFA04FB29E7E5FD00BEBB4B /* API.swift */; };
+		2CF9D3F729F05B0F00815B6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF9D3E629F05B0F00815B6A /* Preview Assets.xcassets */; };
+		2CF9D3F829F05B0F00815B6A /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D3E829F05B0F00815B6A /* AppState.swift */; };
+		2CF9D3F929F05B0F00815B6A /* QuestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D3E929F05B0F00815B6A /* QuestModel.swift */; };
+		2CF9D3FA29F05B0F00815B6A /* QuestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D3EB29F05B0F00815B6A /* QuestViewModel.swift */; };
+		2CF9D3FB29F05B0F00815B6A /* QuestCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D3EE29F05B0F00815B6A /* QuestCardList.swift */; };
+		2CF9D3FC29F05B0F00815B6A /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D3EF29F05B0F00815B6A /* Header.swift */; };
+		2CF9D3FD29F05B0F00815B6A /* QuestCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D3F029F05B0F00815B6A /* QuestCard.swift */; };
+		2CF9D3FE29F05B0F00815B6A /* QuestDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D3F229F05B0F00815B6A /* QuestDetail.swift */; };
+		2CF9D3FF29F05B0F00815B6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D3F329F05B0F00815B6A /* ContentView.swift */; };
+		2CF9D40029F05B0F00815B6A /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D3F529F05B0F00815B6A /* LoginPage.swift */; };
+		2CF9D40129F05B0F00815B6A /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D3F629F05B0F00815B6A /* LoginButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,14 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2C06EDEB29E07E3A00982E70 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
-		2C06EDED29E0833800982E70 /* QuestCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestCard.swift; sourceTree = "<group>"; };
-		2C06EDEF29E1386F00982E70 /* QuestDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestDetail.swift; sourceTree = "<group>"; };
-		2C06EDF129E1C4A800982E70 /* QuestCardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestCardList.swift; sourceTree = "<group>"; };
-		2C3A387B29EECDC900434E96 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		2C61FA2A29E07040004797AD /* quest-ios-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "quest-ios-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C61FA2D29E07040004797AD /* quest_ios_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quest_ios_appApp.swift; sourceTree = "<group>"; };
-		2C61FA2F29E07040004797AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C61FA3129E07041004797AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C61FA3429E07041004797AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2C61FA3A29E07042004797AD /* quest-ios-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "quest-ios-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,9 +53,17 @@
 		2C61FA4429E07042004797AD /* quest-ios-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "quest-ios-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C61FA4829E07042004797AD /* quest_ios_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quest_ios_appUITests.swift; sourceTree = "<group>"; };
 		2C61FA4A29E07042004797AD /* quest_ios_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quest_ios_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		2CCBD0B729ED5CC3005B2412 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
-		2CCBD0B929ED5F8A005B2412 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
-		2CFA04FB29E7E5FD00BEBB4B /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		2CF9D3E629F05B0F00815B6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2CF9D3E829F05B0F00815B6A /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		2CF9D3E929F05B0F00815B6A /* QuestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestModel.swift; sourceTree = "<group>"; };
+		2CF9D3EB29F05B0F00815B6A /* QuestViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestViewModel.swift; sourceTree = "<group>"; };
+		2CF9D3EE29F05B0F00815B6A /* QuestCardList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestCardList.swift; sourceTree = "<group>"; };
+		2CF9D3EF29F05B0F00815B6A /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		2CF9D3F029F05B0F00815B6A /* QuestCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestCard.swift; sourceTree = "<group>"; };
+		2CF9D3F229F05B0F00815B6A /* QuestDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestDetail.swift; sourceTree = "<group>"; };
+		2CF9D3F329F05B0F00815B6A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2CF9D3F529F05B0F00815B6A /* LoginPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		2CF9D3F629F05B0F00815B6A /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,16 +114,11 @@
 		2C61FA2C29E07040004797AD /* quest-ios-app */ = {
 			isa = PBXGroup;
 			children = (
-				2CFA04FB29E7E5FD00BEBB4B /* API.swift */,
-				2CCBD0B729ED5CC3005B2412 /* LoginPage.swift */,
-				2CCBD0B929ED5F8A005B2412 /* LoginButton.swift */,
+				2CF9D3E729F05B0F00815B6A /* Models */,
+				2CF9D3E529F05B0F00815B6A /* Preview Content */,
+				2CF9D3EA29F05B0F00815B6A /* ViewModels */,
+				2CF9D3EC29F05B0F00815B6A /* Views */,
 				2C61FA2D29E07040004797AD /* quest_ios_appApp.swift */,
-				2C61FA2F29E07040004797AD /* ContentView.swift */,
-				2C06EDEB29E07E3A00982E70 /* Header.swift */,
-				2C3A387B29EECDC900434E96 /* AppState.swift */,
-				2C06EDED29E0833800982E70 /* QuestCard.swift */,
-				2C06EDF129E1C4A800982E70 /* QuestCardList.swift */,
-				2C06EDEF29E1386F00982E70 /* QuestDetail.swift */,
 				2C61FA3129E07041004797AD /* Assets.xcassets */,
 				2C61FA3329E07041004797AD /* Preview Content */,
 			);
@@ -149,6 +148,69 @@
 				2C61FA4A29E07042004797AD /* quest_ios_appUITestsLaunchTests.swift */,
 			);
 			path = "quest-ios-appUITests";
+			sourceTree = "<group>";
+		};
+		2CF9D3E529F05B0F00815B6A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2CF9D3E629F05B0F00815B6A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2CF9D3E729F05B0F00815B6A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2CF9D3E829F05B0F00815B6A /* AppState.swift */,
+				2CF9D3E929F05B0F00815B6A /* QuestModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2CF9D3EA29F05B0F00815B6A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2CF9D3EB29F05B0F00815B6A /* QuestViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2CF9D3EC29F05B0F00815B6A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CF9D3ED29F05B0F00815B6A /* components */,
+				2CF9D3F129F05B0F00815B6A /* QuestDetail */,
+				2CF9D3F329F05B0F00815B6A /* ContentView.swift */,
+				2CF9D3F429F05B0F00815B6A /* Login */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2CF9D3ED29F05B0F00815B6A /* components */ = {
+			isa = PBXGroup;
+			children = (
+				2CF9D3EE29F05B0F00815B6A /* QuestCardList.swift */,
+				2CF9D3EF29F05B0F00815B6A /* Header.swift */,
+				2CF9D3F029F05B0F00815B6A /* QuestCard.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		2CF9D3F129F05B0F00815B6A /* QuestDetail */ = {
+			isa = PBXGroup;
+			children = (
+				2CF9D3F229F05B0F00815B6A /* QuestDetail.swift */,
+			);
+			path = QuestDetail;
+			sourceTree = "<group>";
+		};
+		2CF9D3F429F05B0F00815B6A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2CF9D3F529F05B0F00815B6A /* LoginPage.swift */,
+				2CF9D3F629F05B0F00815B6A /* LoginButton.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C61FA3529E07041004797AD /* Preview Assets.xcassets in Resources */,
+				2CF9D3F729F05B0F00815B6A /* Preview Assets.xcassets in Resources */,
 				2C61FA3229E07041004797AD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,16 +344,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C06EDF029E1386F00982E70 /* QuestDetail.swift in Sources */,
-				2C3A387C29EECDC900434E96 /* AppState.swift in Sources */,
-				2CCBD0BA29ED5F8A005B2412 /* LoginButton.swift in Sources */,
-				2CCBD0B829ED5CC3005B2412 /* LoginPage.swift in Sources */,
-				2C61FA3029E07040004797AD /* ContentView.swift in Sources */,
-				2C06EDF229E1C4A800982E70 /* QuestCardList.swift in Sources */,
-				2C06EDEC29E07E3A00982E70 /* Header.swift in Sources */,
-				2C06EDEE29E0833800982E70 /* QuestCard.swift in Sources */,
+				2CF9D40129F05B0F00815B6A /* LoginButton.swift in Sources */,
 				2C61FA2E29E07040004797AD /* quest_ios_appApp.swift in Sources */,
-				2CFA04FC29E7E5FD00BEBB4B /* API.swift in Sources */,
+				2CF9D3FE29F05B0F00815B6A /* QuestDetail.swift in Sources */,
+				2CF9D3FA29F05B0F00815B6A /* QuestViewModel.swift in Sources */,
+				2CF9D3F829F05B0F00815B6A /* AppState.swift in Sources */,
+				2CF9D3F929F05B0F00815B6A /* QuestModel.swift in Sources */,
+				2CF9D3FF29F05B0F00815B6A /* ContentView.swift in Sources */,
+				2CF9D3FC29F05B0F00815B6A /* Header.swift in Sources */,
+				2CF9D3FD29F05B0F00815B6A /* QuestCard.swift in Sources */,
+				2CF9D40029F05B0F00815B6A /* LoginPage.swift in Sources */,
+				2CF9D3FB29F05B0F00815B6A /* QuestCardList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
