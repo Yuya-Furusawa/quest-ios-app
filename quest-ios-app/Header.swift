@@ -44,7 +44,7 @@ struct Header_Preview: PreviewProvider {
     static var previews: some View {
         VStack {
             NavigationView{
-                Header()
+                Header().environmentObject(AppState())
             }
             Spacer(minLength: 10)
         }
