@@ -13,7 +13,6 @@
 		2C61FA3F29E07042004797AD /* quest_ios_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61FA3E29E07042004797AD /* quest_ios_appTests.swift */; };
 		2C61FA4929E07042004797AD /* quest_ios_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61FA4829E07042004797AD /* quest_ios_appUITests.swift */; };
 		2C61FA4B29E07042004797AD /* quest_ios_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61FA4A29E07042004797AD /* quest_ios_appUITestsLaunchTests.swift */; };
-		2CF9D3F729F05B0F00815B6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF9D3E629F05B0F00815B6A /* Preview Assets.xcassets */; };
 		2CF9D3F829F05B0F00815B6A /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D3E829F05B0F00815B6A /* AppState.swift */; };
 		2CF9D3F929F05B0F00815B6A /* QuestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D3E929F05B0F00815B6A /* QuestModel.swift */; };
 		2CF9D3FA29F05B0F00815B6A /* QuestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D3EB29F05B0F00815B6A /* QuestViewModel.swift */; };
@@ -324,7 +323,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C61FA3529E07041004797AD /* Preview Assets.xcassets in Resources */,
-				2CF9D3F729F05B0F00815B6A /* Preview Assets.xcassets in Resources */,
 				2C61FA3229E07041004797AD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
