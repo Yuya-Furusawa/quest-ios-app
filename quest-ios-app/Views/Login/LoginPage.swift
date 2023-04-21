@@ -10,13 +10,14 @@ import SwiftUI
 struct LoginPage: View {
     @EnvironmentObject var appState: AppState
     @Environment(\.presentationMode) var presentationMode
-
+    @StateObject var viewModel = UserViewModel()
+    
     @State private var email: String = ""
     @State private var password: String = ""
     @State private var showAlert = false
     @State private var alertTitle = ""
     @State private var alertMessage = ""
-
+    
     var body: some View {
         VStack {
             TextField("メールアドレス", text: $email)
@@ -24,20 +25,23 @@ struct LoginPage: View {
                 .autocapitalization(.none)
                 .keyboardType(.emailAddress)
                 .border(Color.gray, width: 1)
-
+            
             SecureField("パスワード", text: $password)
                 .padding()
                 .border(Color.gray, width: 1)
-
+            
             Button(action: {
-                if validate(email: email, password: password) {
-                    // ログイン成功
-                    loginUser()
-                } else {
-                    // ログイン失敗
-                    alertTitle = "ログイン失敗"
-                    alertMessage = "メールアドレスまたはパスワードが正しくありません。"
-                    showAlert = true
+                Task {
+                    let isValidated = await validate(email: email, password: password)
+                    if isValidated {
+                        // ログイン成功
+                        loginUser()
+                    } else {
+                        // ログイン失敗
+                        alertTitle = "ログイン失敗"
+                        alertMessage = "メールアドレスまたはパスワードが正しくありません。"
+                        showAlert = true
+                    }
                 }
             }) {
                 Text("ログイン")
@@ -52,14 +56,14 @@ struct LoginPage: View {
         }
         .padding()
     }
-
-    func validate(email: String, password: String) -> Bool {
-        // ここで実際の認証処理を行ってください。
-        // この例では、ダミーの認証処理を行っています。
-        return email == "user@example.com" && password == "password"
+    
+    func validate(email: String, password: String) async -> Bool {
+        await viewModel.login(email: email, password: password)
+        return viewModel.user != nil
     }
-
+    
     func loginUser() {
+        appState.user = viewModel.user
         appState.isLoggedIn = true
         presentationMode.wrappedValue.dismiss()
     }

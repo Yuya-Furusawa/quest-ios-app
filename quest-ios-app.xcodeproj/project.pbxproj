@@ -24,6 +24,8 @@
 		2CF9D3FF29F05B0F00815B6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D3F329F05B0F00815B6A /* ContentView.swift */; };
 		2CF9D40029F05B0F00815B6A /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D3F529F05B0F00815B6A /* LoginPage.swift */; };
 		2CF9D40129F05B0F00815B6A /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D3F629F05B0F00815B6A /* LoginButton.swift */; };
+		2CF9D40329F170F200815B6A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D40229F170F200815B6A /* UserModel.swift */; };
+		2CF9D40529F1750200815B6A /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D40429F1750200815B6A /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		2CF9D3F329F05B0F00815B6A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2CF9D3F529F05B0F00815B6A /* LoginPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		2CF9D3F629F05B0F00815B6A /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		2CF9D40229F170F200815B6A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		2CF9D40429F1750200815B6A /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,7 @@
 			children = (
 				2CF9D3E829F05B0F00815B6A /* AppState.swift */,
 				2CF9D3E929F05B0F00815B6A /* QuestModel.swift */,
+				2CF9D40229F170F200815B6A /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				2CF9D3EB29F05B0F00815B6A /* QuestViewModel.swift */,
+				2CF9D40429F1750200815B6A /* UserViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -353,7 +359,9 @@
 				2CF9D3FF29F05B0F00815B6A /* ContentView.swift in Sources */,
 				2CF9D3FC29F05B0F00815B6A /* Header.swift in Sources */,
 				2CF9D3FD29F05B0F00815B6A /* QuestCard.swift in Sources */,
+				2CF9D40529F1750200815B6A /* UserViewModel.swift in Sources */,
 				2CF9D40029F05B0F00815B6A /* LoginPage.swift in Sources */,
+				2CF9D40329F170F200815B6A /* UserModel.swift in Sources */,
 				2CF9D3FB29F05B0F00815B6A /* QuestCardList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
