@@ -28,7 +28,7 @@ struct Header: View {
                 Spacer()
 
                 if appState.isLoggedIn {
-                    Spacer()
+                    LogoutButton()
                 } else {
                     LoginButton()
                 }

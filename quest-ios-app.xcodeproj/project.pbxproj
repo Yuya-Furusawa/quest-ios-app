@@ -26,6 +26,7 @@
 		2CF9D40329F170F200815B6A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D40229F170F200815B6A /* UserModel.swift */; };
 		2CF9D40529F1750200815B6A /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D40429F1750200815B6A /* UserViewModel.swift */; };
 		2CF9D40729F3028200815B6A /* ChallengeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D40629F3028200815B6A /* ChallengeCard.swift */; };
+		2CF9D40C29F3D86500815B6A /* LogoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D40B29F3D86500815B6A /* LogoutButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		2CF9D40229F170F200815B6A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		2CF9D40429F1750200815B6A /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		2CF9D40629F3028200815B6A /* ChallengeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeCard.swift; sourceTree = "<group>"; };
+		2CF9D40B29F3D86500815B6A /* LogoutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 			children = (
 				2CF9D3F529F05B0F00815B6A /* LoginPage.swift */,
 				2CF9D3F629F05B0F00815B6A /* LoginButton.swift */,
+				2CF9D40B29F3D86500815B6A /* LogoutButton.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CF9D40129F05B0F00815B6A /* LoginButton.swift in Sources */,
+				2CF9D40C29F3D86500815B6A /* LogoutButton.swift in Sources */,
 				2C61FA2E29E07040004797AD /* quest_ios_appApp.swift in Sources */,
 				2CF9D3FE29F05B0F00815B6A /* QuestDetail.swift in Sources */,
 				2CF9D3FA29F05B0F00815B6A /* QuestViewModel.swift in Sources */,
