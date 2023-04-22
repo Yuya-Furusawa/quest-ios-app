@@ -25,6 +25,7 @@
 		2CF9D40129F05B0F00815B6A /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D3F629F05B0F00815B6A /* LoginButton.swift */; };
 		2CF9D40329F170F200815B6A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D40229F170F200815B6A /* UserModel.swift */; };
 		2CF9D40529F1750200815B6A /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D40429F1750200815B6A /* UserViewModel.swift */; };
+		2CF9D40729F3028200815B6A /* ChallengeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D40629F3028200815B6A /* ChallengeCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		2CF9D3F629F05B0F00815B6A /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		2CF9D40229F170F200815B6A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		2CF9D40429F1750200815B6A /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		2CF9D40629F3028200815B6A /* ChallengeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,8 +196,8 @@
 		2CF9D3ED29F05B0F00815B6A /* components */ = {
 			isa = PBXGroup;
 			children = (
-				2CF9D3EE29F05B0F00815B6A /* QuestCardList.swift */,
 				2CF9D3EF29F05B0F00815B6A /* Header.swift */,
+				2CF9D3EE29F05B0F00815B6A /* QuestCardList.swift */,
 				2CF9D3F029F05B0F00815B6A /* QuestCard.swift */,
 			);
 			path = components;
@@ -205,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				2CF9D3F229F05B0F00815B6A /* QuestDetail.swift */,
+				2CF9D40629F3028200815B6A /* ChallengeCard.swift */,
 			);
 			path = QuestDetail;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				2CF9D3FD29F05B0F00815B6A /* QuestCard.swift in Sources */,
 				2CF9D40529F1750200815B6A /* UserViewModel.swift in Sources */,
 				2CF9D40029F05B0F00815B6A /* LoginPage.swift in Sources */,
+				2CF9D40729F3028200815B6A /* ChallengeCard.swift in Sources */,
 				2CF9D40329F170F200815B6A /* UserModel.swift in Sources */,
 				2CF9D3FB29F05B0F00815B6A /* QuestCardList.swift in Sources */,
 			);
