@@ -33,6 +33,8 @@ struct QuestDetail: View {
             }
         }
         .padding()
+        
+        Spacer(minLength: 10)
     }
 }
 
