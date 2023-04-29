@@ -10,5 +10,5 @@ struct User: Codable, Identifiable {
     let username: String
     let email: String
     let password: String
-    let participate_quest: [Quest]
+    var participate_quest: [Quest]
 }

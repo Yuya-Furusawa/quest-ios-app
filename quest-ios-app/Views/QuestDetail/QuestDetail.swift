@@ -8,14 +8,42 @@
 import SwiftUI
 
 struct QuestDetail: View {
+    @EnvironmentObject var appState: AppState
     let quest:Quest
+    
+    @State var isParticipated: Bool = false
     
     var body: some View {
         VStack(alignment: .leading){
-            Text(quest.title)
-                .font(.title)
-                .fontWeight(.bold)
-                .padding(.bottom, 1.0)
+            HStack {
+                Text(quest.title)
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .padding(.bottom, 1.0)
+                
+                Spacer(minLength: 10)
+                
+                if appState.isLoggedIn {
+                    if isParticipated {
+                        Text("参加中")
+                            .fontWeight(.medium)
+                            .foregroundColor(Color(red: 0.23921568627450981, green: 0.7568627450980392, blue: 0.5568627450980392))
+                            .padding(/*@START_MENU_TOKEN@*/.all, 6.0/*@END_MENU_TOKEN@*/)
+                            .border(/*@START_MENU_TOKEN@*/Color(red: 0.23921568627450981, green: 0.7568627450980392, blue: 0.5568627450980392)/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
+                            .cornerRadius(/*@START_MENU_TOKEN@*/4.0/*@END_MENU_TOKEN@*/)
+                    } else {
+                        ParticipateButton(user: appState.user!, quest: quest)
+                    }
+                }
+            }
+            .onAppear{
+                if appState.user != nil {
+                    isParticipated = (appState.user?.participate_quest.contains { element in
+                        element.id == quest.id
+                    }) != false
+                }
+            }
+            
             Text(quest.description)
                 .foregroundColor(Color.gray)
                 .padding(.bottom, 1.0)
@@ -63,8 +91,9 @@ struct QuestDetail_Preview: PreviewProvider {
             num_clear: 678,
             challenges: [challenge_1, challenge_2]
         )
+        
         VStack {
-            QuestDetail(quest: quest)
+            QuestDetail(quest: quest).environmentObject(AppState())
             Spacer(minLength: 10)
         }
     }

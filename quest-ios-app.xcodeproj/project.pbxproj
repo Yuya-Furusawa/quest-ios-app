@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C56D9CD29FA329000B260B5 /* ParticipateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C56D9CC29FA329000B260B5 /* ParticipateButton.swift */; };
+		2C56D9CF29FA3EAB00B260B5 /* UserQuestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C56D9CE29FA3EAB00B260B5 /* UserQuestViewModel.swift */; };
+		2C56D9D129FC2D4500B260B5 /* UseQuestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C56D9D029FC2D4500B260B5 /* UseQuestModel.swift */; };
 		2C61FA2E29E07040004797AD /* quest_ios_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61FA2D29E07040004797AD /* quest_ios_appApp.swift */; };
 		2C61FA3229E07041004797AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C61FA3129E07041004797AD /* Assets.xcassets */; };
 		2C61FA3529E07041004797AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C61FA3429E07041004797AD /* Preview Assets.xcassets */; };
@@ -47,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C56D9CC29FA329000B260B5 /* ParticipateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipateButton.swift; sourceTree = "<group>"; };
+		2C56D9CE29FA3EAB00B260B5 /* UserQuestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserQuestViewModel.swift; sourceTree = "<group>"; };
+		2C56D9D029FC2D4500B260B5 /* UseQuestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseQuestModel.swift; sourceTree = "<group>"; };
 		2C61FA2A29E07040004797AD /* quest-ios-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "quest-ios-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C61FA2D29E07040004797AD /* quest_ios_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quest_ios_appApp.swift; sourceTree = "<group>"; };
 		2C61FA3129E07041004797AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -170,6 +176,7 @@
 			children = (
 				2CF9D3E829F05B0F00815B6A /* AppState.swift */,
 				2CF9D3E929F05B0F00815B6A /* QuestModel.swift */,
+				2C56D9D029FC2D4500B260B5 /* UseQuestModel.swift */,
 				2CF9D40229F170F200815B6A /* UserModel.swift */,
 			);
 			path = Models;
@@ -180,6 +187,7 @@
 			children = (
 				2CF9D3EB29F05B0F00815B6A /* QuestViewModel.swift */,
 				2CF9D40429F1750200815B6A /* UserViewModel.swift */,
+				2C56D9CE29FA3EAB00B260B5 /* UserQuestViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -210,6 +218,7 @@
 			children = (
 				2CF9D3F229F05B0F00815B6A /* QuestDetail.swift */,
 				2CF9D40629F3028200815B6A /* ChallengeCard.swift */,
+				2C56D9CC29FA329000B260B5 /* ParticipateButton.swift */,
 			);
 			path = QuestDetail;
 			sourceTree = "<group>";
@@ -358,7 +367,9 @@
 				2CF9D40C29F3D86500815B6A /* LogoutButton.swift in Sources */,
 				2C61FA2E29E07040004797AD /* quest_ios_appApp.swift in Sources */,
 				2CF9D3FE29F05B0F00815B6A /* QuestDetail.swift in Sources */,
+				2C56D9CD29FA329000B260B5 /* ParticipateButton.swift in Sources */,
 				2CF9D3FA29F05B0F00815B6A /* QuestViewModel.swift in Sources */,
+				2C56D9D129FC2D4500B260B5 /* UseQuestModel.swift in Sources */,
 				2CF9D3F829F05B0F00815B6A /* AppState.swift in Sources */,
 				2CF9D3F929F05B0F00815B6A /* QuestModel.swift in Sources */,
 				2CF9D3FF29F05B0F00815B6A /* ContentView.swift in Sources */,
@@ -368,6 +379,7 @@
 				2CF9D40029F05B0F00815B6A /* LoginPage.swift in Sources */,
 				2CF9D40729F3028200815B6A /* ChallengeCard.swift in Sources */,
 				2CF9D40329F170F200815B6A /* UserModel.swift in Sources */,
+				2C56D9CF29FA3EAB00B260B5 /* UserQuestViewModel.swift in Sources */,
 				2CF9D3FB29F05B0F00815B6A /* QuestCardList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
