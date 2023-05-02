@@ -9,6 +9,7 @@ import SwiftUI
 
 struct QuestDetail: View {
     @EnvironmentObject var appState: AppState
+    @StateObject var viewModel = ChallengeViewModel()
     let quest:Quest
     
     @State var isParticipated: Bool = false
@@ -32,7 +33,7 @@ struct QuestDetail: View {
                             .border(/*@START_MENU_TOKEN@*/Color(red: 0.23921568627450981, green: 0.7568627450980392, blue: 0.5568627450980392)/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
                             .cornerRadius(/*@START_MENU_TOKEN@*/4.0/*@END_MENU_TOKEN@*/)
                     } else {
-                        ParticipateButton(user: appState.user!, quest: quest)
+                        ParticipateButton(user: appState.user!, quest: quest, isParticipated: $isParticipated)
                     }
                 }
             }
@@ -56,8 +57,11 @@ struct QuestDetail: View {
             }
             Spacer(minLength: 30).fixedSize()
             
-            ForEach(quest.challenges){ challenge in
+            ForEach(viewModel.challenges){ challenge in
                 ChallengeCard(challenge: challenge)
+            }
+            .onAppear {
+                viewModel.fetchChallenges(id: quest.id)
             }
         }
         .padding()
