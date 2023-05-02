@@ -10,5 +10,14 @@ struct User: Codable, Identifiable {
     let username: String
     let email: String
     let password: String
-    var participate_quest: [Quest]
+    var participate_quest: [QuestFromRow]
+}
+
+struct QuestFromRow: Codable, Identifiable {
+    let id: String
+    let title:String
+    let description:String
+    let difficulty:String
+    let num_participate:Int
+    let num_clear:Int
 }

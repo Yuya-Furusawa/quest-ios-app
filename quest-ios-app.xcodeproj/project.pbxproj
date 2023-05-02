@@ -16,6 +16,8 @@
 		2C61FA3F29E07042004797AD /* quest_ios_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61FA3E29E07042004797AD /* quest_ios_appTests.swift */; };
 		2C61FA4929E07042004797AD /* quest_ios_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61FA4829E07042004797AD /* quest_ios_appUITests.swift */; };
 		2C61FA4B29E07042004797AD /* quest_ios_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C61FA4A29E07042004797AD /* quest_ios_appUITestsLaunchTests.swift */; };
+		2C6D0D7929FF8E9C0065DDA7 /* ChallengeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6D0D7829FF8E9C0065DDA7 /* ChallengeModel.swift */; };
+		2C6D0D7B29FF8ED00065DDA7 /* ChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6D0D7A29FF8ED00065DDA7 /* ChallengeViewModel.swift */; };
 		2CF9D3F829F05B0F00815B6A /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D3E829F05B0F00815B6A /* AppState.swift */; };
 		2CF9D3F929F05B0F00815B6A /* QuestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D3E929F05B0F00815B6A /* QuestModel.swift */; };
 		2CF9D3FA29F05B0F00815B6A /* QuestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9D3EB29F05B0F00815B6A /* QuestViewModel.swift */; };
@@ -62,6 +64,8 @@
 		2C61FA4429E07042004797AD /* quest-ios-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "quest-ios-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C61FA4829E07042004797AD /* quest_ios_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quest_ios_appUITests.swift; sourceTree = "<group>"; };
 		2C61FA4A29E07042004797AD /* quest_ios_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quest_ios_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2C6D0D7829FF8E9C0065DDA7 /* ChallengeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeModel.swift; sourceTree = "<group>"; };
+		2C6D0D7A29FF8ED00065DDA7 /* ChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewModel.swift; sourceTree = "<group>"; };
 		2CF9D3E629F05B0F00815B6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2CF9D3E829F05B0F00815B6A /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		2CF9D3E929F05B0F00815B6A /* QuestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestModel.swift; sourceTree = "<group>"; };
@@ -178,6 +182,7 @@
 				2CF9D3E929F05B0F00815B6A /* QuestModel.swift */,
 				2C56D9D029FC2D4500B260B5 /* UseQuestModel.swift */,
 				2CF9D40229F170F200815B6A /* UserModel.swift */,
+				2C6D0D7829FF8E9C0065DDA7 /* ChallengeModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				2CF9D3EB29F05B0F00815B6A /* QuestViewModel.swift */,
+				2C6D0D7A29FF8ED00065DDA7 /* ChallengeViewModel.swift */,
 				2CF9D40429F1750200815B6A /* UserViewModel.swift */,
 				2C56D9CE29FA3EAB00B260B5 /* UserQuestViewModel.swift */,
 			);
@@ -369,7 +375,9 @@
 				2CF9D3FE29F05B0F00815B6A /* QuestDetail.swift in Sources */,
 				2C56D9CD29FA329000B260B5 /* ParticipateButton.swift in Sources */,
 				2CF9D3FA29F05B0F00815B6A /* QuestViewModel.swift in Sources */,
+				2C6D0D7B29FF8ED00065DDA7 /* ChallengeViewModel.swift in Sources */,
 				2C56D9D129FC2D4500B260B5 /* UseQuestModel.swift in Sources */,
+				2C6D0D7929FF8E9C0065DDA7 /* ChallengeModel.swift in Sources */,
 				2CF9D3F829F05B0F00815B6A /* AppState.swift in Sources */,
 				2CF9D3F929F05B0F00815B6A /* QuestModel.swift in Sources */,
 				2CF9D3FF29F05B0F00815B6A /* ContentView.swift in Sources */,

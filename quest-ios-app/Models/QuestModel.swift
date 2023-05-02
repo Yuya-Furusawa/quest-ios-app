@@ -13,12 +13,5 @@ struct Quest: Codable, Identifiable {
     let difficulty:String
     let num_participate:Int
     let num_clear:Int
-    let challenges: [Challenge]
-}
-
-struct Challenge: Codable, Identifiable {
-    let id:String
-    let name:String
-    let description:String
-    let quest_id:String
+    let challenges:[Challenge]
 }
