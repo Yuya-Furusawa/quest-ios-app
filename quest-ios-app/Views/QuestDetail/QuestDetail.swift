@@ -9,7 +9,6 @@ import SwiftUI
 
 struct QuestDetail: View {
     @EnvironmentObject var appState: AppState
-    @StateObject var viewModel = ChallengeViewModel()
     let quest:Quest
     
     @State var isParticipated: Bool = false
@@ -57,11 +56,8 @@ struct QuestDetail: View {
             }
             Spacer(minLength: 30).fixedSize()
             
-            ForEach(viewModel.challenges){ challenge in
+            ForEach(quest.challenges){ challenge in
                 ChallengeCard(challenge: challenge)
-            }
-            .onAppear {
-                viewModel.fetchChallenges(id: quest.id)
             }
         }
         .padding()
